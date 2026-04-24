@@ -1045,12 +1045,12 @@ body.day .li { background: #f9f7ff; }
 //  FIREBASE CONFIG — REEMPLAZA CON TU CONFIG
 // ══════════════════════════════════════════════════════
 const firebaseConfig = {
-  apiKey:            "TU_API_KEY",
-  authDomain:        "TU_PROJECT.firebaseapp.com",
-  projectId:         "TU_PROJECT_ID",
-  storageBucket:     "TU_PROJECT.appspot.com",
-  messagingSenderId: "TU_SENDER_ID",
-  appId:             "TU_APP_ID"
+  apiKey: "AIzaSyCHwxG3OoFEmE3qzb-siRnNOaqPGzNQOaI",
+  authDomain: "finanzas-personales-d84d5.firebaseapp.com",
+  projectId: "finanzas-personales-d84d5",
+  storageBucket: "finanzas-personales-d84d5.firebasestorage.app",
+  messagingSenderId: "678240726608",
+  appId: "1:678240726608:web:ce181d0587c0f3bfa26b55"
 };
 firebase.initializeApp(firebaseConfig);
 const AUTH = firebase.auth();
@@ -2443,7 +2443,7 @@ function cerrarBienvenida() {
 //  PRECIO EN USD — CONVERSIÓN AUTOMÁTICA POR PAÍS
 //  Cambia PRECIO_USD para ajustar tu precio global
 // ══════════════════════════════════════════════════════
-const PRECIO_USD = 4.99; // Tu precio base en dólares
+const PRECIO_USD = 5; // Tu precio base en dólares
 
 // Caché de tipos de cambio (evita llamadas repetidas)
 let _tasasCache = null;
@@ -2514,7 +2514,7 @@ async function mostrarPrecioEnBloqueo() {
 //  CONTROL DE ACCESO — MEMBRESÍAS
 //  Tu UID de admin (ve a Firebase → Authentication → copia tu UID)
 // ══════════════════════════════════════════════════════
-const ADMIN_UID = 'REEMPLAZA_CON_TU_UID_DE_FIREBASE';
+const ADMIN_UID = '52h9sigUjwO8soOVx9OkwQxyo792';
 const PRECIO_DEFAULT = 99; // MXN
 
 async function verificarAcceso(uid) {
